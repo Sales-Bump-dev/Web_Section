@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  &-text {
+    display: inline-block;
+    line-height: 1rem;
+    color: $primary-color;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  &-extra {
+    background-color: $logo-extra-color;
+    display: inline-block;
+    width: 1.18rem;
+    height: 1rem;
+    margin-left: 0.6rem;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  }
+}

@@ -1,3 +1,17 @@
+@import "./sass/variables";
+
+// styles for the components
+@import "./components/logo/Logo.styles";
+@import "./components/footer/Footer.styles";
+@import "./components/card/Card.styles";
+@import "./pages/landing_page/LandingPage.styles";
+
+:root {
+  font-size: 16px;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
 .App {
   text-align: center;
 }

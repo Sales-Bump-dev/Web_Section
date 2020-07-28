@@ -1,0 +1,911 @@
+.landing_page {
+  background-color: white;
+  overflow-x: hidden;
+  position: relative;
+
+  .section {
+    &-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      &-extra {
+        background-color: $logo-extra-color;
+        display: inline-block;
+        width: 1.18rem;
+        height: 1rem;
+        margin-left: 0.6rem;
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+      }
+
+      .prominent-text {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1.6875rem;
+        line-height: 2.25rem;
+      }
+
+      .lighter-text {
+        font-size: 1rem;
+        line-height: 1.31rem;
+        color: $text-light-color-2;
+      }
+    }
+
+    // SECTION - topmost
+    &--topmost {
+      &-bg {
+        height: 53.5rem;
+        overflow-y: hidden;
+        height: 53.5rem;
+        padding-top: 1rem;
+        background: url("/assets/top-wave.svg");
+        background-repeat: no-repeat;
+        transform: translate(31.125rem, 0rem);
+      }
+
+      &-nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 1.625rem;
+        left: 0rem;
+        width: 100%;
+        padding: $site-wide-padding;
+        padding-top: 0rem;
+
+        .nav-item {
+          color: white;
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &-right {
+          width: 25.06rem;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          left: -10rem;
+        }
+      }
+
+      &-main {
+        position: absolute;
+        top: 0rem;
+        margin-top: 15.5rem;
+        padding: $site-wide-padding;
+        padding-top: 0rem;
+        padding-right: 0rem;
+        .prominent-text {
+          width: 25.06rem;
+          font-weight: bold;
+          font-size: 4rem;
+          line-height: 5.31rem;
+          color: black;
+          margin-bottom: 2.94rem;
+        }
+
+        .lighter-text {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          color: black;
+          margin-bottom: 2.94rem;
+        }
+
+        .get-started-btn {
+          display: flex;
+          justify-content: center;
+          color: white;
+          background-color: $primary-color;
+          text-decoration: none;
+          align-items: center;
+          width: 21.14rem;
+          height: 5.68rem;
+          border-radius: 0.937rem;
+        }
+      }
+
+      &-image {
+        background: url("/assets/top-image.svg");
+        width: 31.94rem;
+        height: 38.94rem;
+        position: absolute;
+        top: 5.625rem;
+        // right: 9rem; //? TO-DO : find the best right alignment
+        right: 10%;
+      }
+    }
+    // SECTION - control everything styles
+
+    &--control_everything {
+      padding: $site-wide-padding;
+      padding-top: 0rem !important;
+      margin-bottom: 6.81rem;
+      .section-header {
+        margin-bottom: 2.5rem;
+        .lighter-text {
+          width: 35.375rem;
+          text-align: center;
+        }
+      }
+      .offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .offer {
+          text-align: center;
+          margin-top: 1.31rem;
+          .prominent-text {
+            font-weight: bold;
+            font-size: 1.68rem;
+            color: black;
+            line-height: 2.25rem;
+          }
+          .lighter-text {
+            font-size: 1rem;
+            line-height: 1.31rem;
+            color: $text-light-color-2;
+          }
+          &-ease {
+            width: 18.37rem;
+            overflow-x: hidden;
+
+            &-img {
+              height: 11rem;
+              background: url("/assets/ease-of-use.svg");
+              background-repeat: no-repeat;
+              position: relative;
+              right: -4rem;
+            }
+          }
+          &-two_way {
+            width: 23.31rem;
+            overflow-x: hidden;
+            &-img {
+              height: 11rem;
+              background: url("/assets/two-way.svg");
+              background-repeat: no-repeat;
+              position: relative;
+              right: -4rem;
+            }
+          }
+          &-ready-made {
+            width: 19.18rem;
+            overflow-x: hidden;
+            &-img {
+              height: 11rem;
+              background: url("/assets/ready-made.svg");
+              background-repeat: no-repeat;
+              position: relative;
+              right: -4rem;
+            }
+          }
+          &-update {
+            width: 18.5rem;
+            overflow-x: hidden;
+            &-img {
+              height: 11rem;
+              background: url("/assets/update.svg");
+              background-repeat: no-repeat;
+              position: relative;
+              right: -4rem;
+            }
+          }
+
+          &-join {
+            width: 31.44rem;
+            height: 13rem;
+            border-radius: 1.25rem;
+            background-color: $secondary-color;
+            justify-self: flex-end;
+            padding-left: 2.5rem;
+            padding-top: 1.31rem;
+
+            .prominent-text {
+              color: white;
+              font-weight: bold;
+              font-size: 1.68rem;
+              line-height: 2.25rem;
+              margin-bottom: 0.69rem;
+            }
+
+            .lighter-text {
+              color: white;
+              font-size: 1rem;
+            }
+
+            &-input_container {
+              width: 26.44rem;
+              position: relative;
+              background-color: white;
+              height: 3.125rem;
+              border-radius: 3.125rem;
+              margin-top: 1.94rem;
+              display: flex;
+              justify-content: space-between;
+            }
+
+            &-input {
+              color: $text-light-color-2;
+              flex-grow: 1;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-left: 1.75rem;
+            }
+
+            &-input_btn {
+              width: 9.875rem;
+              background-color: $rare-ash;
+              border-radius: 3.125rem;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &:hover {
+                cursor: pointer;
+                transform: scaleX(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+    //"""""""""""" END OF SECTION - control everything//
+
+    &--wave {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-main {
+        padding: $site-wide-padding;
+        background: url("/assets/wavy.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 2rem;
+
+        &-cards {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 6.0625rem;
+          .card {
+            &-1 {
+              margin-right: 5rem;
+            }
+            &-2 {
+              // styles applied to the premium card only
+              .free_or_paid {
+                margin-bottom: 2rem !important;
+              }
+
+              .pre-benefits {
+                font-size: 0.875rem;
+                line-height: 1.5625rem;
+                color: $primary-blue-color;
+                font-weight: 600;
+                margin-bottom: 0;
+              }
+
+              .plus {
+                font-size: 0.875rem;
+                font-weight: bold;
+                line-height: 1.5625rem;
+                margin-bottom: 0.3rem;
+              }
+
+              .card--btn {
+                margin-top: 4.3rem !important;
+                background-color: $primary-green-color;
+              }
+            }
+
+            // styles common to both cards. Some styles will be forcely overriden by the those declared in a specific card
+            .price {
+              color: $primary-green-color;
+              display: flex;
+              align-items: flex-start;
+              font-weight: bold;
+              .dollar {
+                font-size: 0.75rem;
+                line-height: 1rem;
+                position: relative;
+                top: 0.7rem;
+              }
+              .amount {
+                font-size: 2.25rem;
+                line-height: 3.06rem;
+              }
+
+              .permonth {
+                align-self: flex-end;
+                position: relative;
+                bottom: 0.5rem;
+                font-size: 0.75rem;
+                line-height: 1rem;
+              }
+            }
+
+            .free_or_paid {
+              font-size: 1.125rem;
+              font-weight: bold;
+              margin-top: 0;
+              margin-bottom: 4.18rem;
+            }
+
+            .benefit {
+              font-size: 0.87rem;
+              line-height: 1.56rem;
+            }
+
+            &--btn {
+              background-color: $primary-blue-color;
+              text-decoration: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1.25rem;
+              line-height: 1.69rem;
+              box-shadow: $button-shadow;
+              border-radius: 0.625rem;
+              width: 12rem;
+              height: 2.75rem;
+              margin-top: 6.375rem;
+            }
+          }
+        }
+        //   """""""""""END OF CARDS STYLES """""""""//
+
+        // SUBSECTION - take your business everywhere with you
+        .subsection_everywhere {
+          display: flex;
+          justify-content: space-between;
+          padding: $site-wide-padding;
+          padding-top: 0rem !important; // overrides the default site-wide padding-top
+          padding-bottom: 8.18rem;
+          &-main {
+            &--extra {
+              background-color: $logo-extra-color;
+              display: inline-block;
+              width: 1.18rem;
+              height: 1rem;
+              margin-left: 0.6rem;
+              clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            }
+
+            .prominent-text {
+              font-size: 3rem;
+              line-height: 4rem;
+              font-weight: bold;
+              color: $primary-color;
+              width: 29.56rem;
+              margin-bottom: 2.125rem;
+            }
+
+            .lighter-text {
+              font-size: 1rem;
+              line-height: 1.3125rem;
+              width: 31.1875rem;
+              color: $text-light-color-2;
+              margin-bottom: 4.375rem;
+            }
+
+            .text-download {
+              font-weight: 600;
+              font-size: 1.6875rem;
+              line-height: 2.25rem;
+              margin-bottom: 4.875rem;
+            }
+
+            .download-btn {
+              display: inline-flex;
+              text-decoration: none;
+              border-radius: 0.9375rem;
+              width: 18.6rem;
+              height: 5rem;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.25rem;
+              font-weight: 600;
+              line-height: 1.6875rem;
+
+              &-text {
+                display: inline-block;
+                margin-left: 0.78rem;
+              }
+
+              &:not(:last-child) {
+                margin-right: 1.02rem;
+              }
+
+              &--playstore {
+                background-color: $primary-color;
+                color: white;
+              }
+
+              &--appstore {
+                background-color: white;
+                color: $primary-color;
+                border: 0.125rem solid $primary-color;
+              }
+            }
+          }
+        }
+
+        // """"""""'END OF SUBSECTION -take your business everywhere with you """""""""""""""""//
+      }
+    }
+
+    &--get_started {
+      display: flex;
+      height: 27.25rem;
+      padding: $site-wide-padding;
+      justify-content: space-between;
+      overflow: hidden;
+      .get_started {
+        &--content {
+          &-extra {
+            background-color: $logo-extra-color;
+            display: inline-block;
+            width: 1.18rem;
+            height: 1rem;
+            margin-left: 0.6rem;
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+          }
+
+          .prominent-text {
+            font-weight: bold;
+            font-size: 2.15rem;
+            line-height: 3rem;
+            color: black;
+          }
+
+          .lighter-text {
+            color: $text-light-color-2;
+            font-size: 1.125rem;
+          }
+
+          &-btn {
+            display: flex;
+            text-decoration: none;
+            background-color: $primary-color;
+            border-radius: 0.95rem;
+            width: 19.7rem;
+            height: 5.3rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.25rem;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 1.5rem;
+          }
+        }
+
+        &--image {
+          background: url("/assets/water-like.svg");
+          background-repeat: no-repeat;
+          padding: 3.93rem 10rem 14rem 7.64rem;
+          overflow: hidden;
+          position: relative;
+          right: -10rem;
+          //   bottom: -11.23rem;
+
+          img {
+            width: 700px;
+            height: 800px;
+            position: relative;
+            top: -100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile view
+@media screen and (max-width: 480px) {
+  .landing_page {
+    .section {
+      &-header {
+        &-extra {
+          width: 0.69rem;
+          height: 0.625rem;
+        }
+
+        .prominent-text {
+          font-size: 0.875rem;
+          line-height: 1.18rem;
+        }
+
+        .lighter-text {
+          font-size: 0.81rem;
+          line-height: 1rem;
+        }
+      }
+
+      // SECTION - TOPMOST
+      &--topmost {
+        &-bg {
+          background: url("/assets/top-wave-sm.svg");
+          background-repeat: no-repeat;
+          transform: translateY(0rem);
+          background-size: cover;
+          height: 427px;
+          width: 100%;
+        }
+
+        &-nav {
+          z-index: 200;
+          padding: $site-wide-padding-sm;
+          .logo {
+            justify-self: start;
+            transform: translateY(-1rem);
+            .logo-text {
+              font-size: 1.5rem;
+              color: white; // Not best practice -TO DO- make logo a styled component that accepts color as variable
+            }
+          }
+
+          &-right {
+            display: none;
+          }
+        }
+
+        &-main {
+          z-index: 200;
+          padding: $site-wide-padding-sm;
+          margin-top: 3.375rem;
+          .prominent-text {
+            width: 14.125rem;
+            font-size: 2.25rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+          }
+          .lighter-text {
+            width: 10.69rem;
+            font-size: 0.875rem;
+            line-height: 1.19rem;
+            color: white;
+            margin-bottom: 1.75rem;
+          }
+
+          .get-started-btn {
+            background-color: white;
+            color: $primary-color;
+            width: 10.89rem;
+            height: 3rem;
+          }
+        }
+        &-image {
+          background: url("/assets/top-image-sm.svg");
+          background-repeat: no-repeat;
+          z-index: 100;
+          transform: translate(14rem, -1.8rem);
+        }
+      }
+
+      // SECTION - CONTROL EVERYTHING
+      &--control_everything {
+        padding: $site-wide-padding-sm;
+        margin-bottom: 3.1rem;
+
+        .section-header {
+          .prominent-text {
+            font-size: 0.875rem;
+            line-height: 1.1875rem;
+          }
+          .lighter-text {
+            width: 15rem;
+            font-size: 0.56rem;
+            line-height: 0.75rem;
+          }
+        }
+
+        .offers {
+          justify-content: center;
+          .offer {
+            margin-right: 2rem;
+            .prominent-text {
+              font-size: 0.875rem;
+              line-height: 1.19rem;
+            }
+
+            .lighter-text {
+              font-size: 0.81rem;
+              line-height: 1.06rem;
+            }
+            &-ease {
+              position: relative;
+              top: -1rem;
+              width: 7.89rem;
+              &-img {
+                background: url("/assets/ease-of-use-sm.svg");
+                background-repeat: no-repeat;
+                width: 6.33rem;
+                height: 5.7rem;
+                position: relative;
+                right: -0.4rem;
+              }
+            }
+
+            &-two_way {
+              width: 9.69rem;
+              margin-right: 0rem;
+              &-img {
+                background: url("/assets/two-way-sm.svg");
+                background-repeat: no-repeat;
+                width: 6.33rem;
+                height: 5.7rem;
+                position: relative;
+                right: -1.2rem;
+              }
+            }
+
+            &-ready-made {
+              width: 9.5rem;
+              &-img {
+                background: url("/assets/ready-made-sm.svg");
+                background-repeat: no-repeat;
+                width: 6.33rem;
+                height: 5.7rem;
+                position: relative;
+                right: -1.2rem;
+              }
+            }
+            &-update {
+              width: 8.75rem;
+              margin-right: 0rem;
+              &-img {
+                background: url("/assets/update-sm.svg");
+                background-repeat: no-repeat;
+                width: 6.33rem;
+                height: 5.7rem;
+                position: relative;
+                right: -1.2rem;
+              }
+            }
+
+            &-join {
+              margin-top: 1.91rem;
+              width: 18.19rem;
+              height: 7.52rem;
+
+              .prominent-text {
+                font-size: 0.9rem;
+                line-height: 1.19;
+              }
+              .lighter-text {
+                font-size: 0.56rem;
+                line-height: 0.75rem;
+              }
+
+              &-input_container {
+                width: 15.3rem;
+                height: 1.808rem;
+              }
+
+              &-input {
+                font-size: 0.56rem;
+                line-height: 0.75rem;
+              }
+
+              &-input_btn {
+                font-size: 0.56rem;
+                line-height: 0.75rem;
+                width: 5.71rem;
+              }
+            }
+          }
+        }
+      }
+
+      // SECTION - WAVY BACKGROUND
+      &--wave {
+        .section-header {
+          margin-bottom: 0rem;
+        }
+        &-main {
+          padding: $site-wide-padding-sm !important;
+          background: url("/assets/wavy-sm.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding-top: 2.75rem !important;
+
+          &-cards {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 60.72rem;
+            margin-bottom: 3.465rem;
+            .card {
+              &-1 {
+                margin-right: 0rem;
+
+                .card--btn {
+                  margin-top: 7rem;
+                }
+              }
+
+              &-2 {
+                margin-top: 1.3rem;
+                .free_or_paid {
+                  margin-bottom: 1.67 !important;
+                }
+
+                .pre-benefits {
+                  font-size: 0.81rem;
+                }
+                .card--btn {
+                  margin-top: 3rem;
+                }
+              }
+
+              .price {
+                margin-top: 0.3rem;
+                .dollar {
+                  top: 0.2rem;
+                }
+                .amount {
+                  font-size: 1.5rem;
+                  line-height: 2.06rem;
+                }
+              }
+              .free_or_paid {
+                font-size: 0.875rem;
+                margin-bottom: 3.31rem;
+              }
+              .benefit {
+                font-size: 0.81rem;
+                line-height: 1.56rem;
+              }
+              &--btn {
+                width: 9.44rem;
+                height: 2.17rem;
+                margin-top: 4.08rem;
+                font-size: 0.8125rem;
+                line-height: 1.125rem;
+              }
+            }
+          }
+
+          // SUBSECTION - take your business everywhere with you
+
+          .subsection_everywhere {
+            flex-direction: column;
+            align-items: center;
+            padding: $site-wide-padding-sm;
+
+            &-main {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              .prominent-text {
+                font-size: 0.875rem;
+                line-height: 1.19rem;
+                margin-bottom: 1px;
+              }
+
+              .lighter-text {
+                font-size: 0.56rem;
+                line-height: 0.75rem;
+                width: 17rem;
+                margin-bottom: 1.125rem;
+
+                span::before {
+                  content: "\A";
+                  white-space: pre;
+                }
+              }
+
+              .text-download {
+                font-size: 0.875rem;
+                line-height: 1.1875rem;
+                margin-bottom: 2rem;
+              }
+
+              .btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20.6rem;
+              }
+
+              .download-btn {
+                width: 9.86rem;
+                height: 2.65rem;
+                margin: 0 !important;
+
+                &-text {
+                  font-size: 0.81rem;
+                  line-height: 1rem;
+                }
+              }
+            }
+
+            &-phone {
+              margin-top: 2.1rem;
+              img {
+                width: 14.4rem;
+                height: 25.5rem;
+              }
+            }
+          }
+          // """"""""'END OF SUBSECTION -take your business everywhere with you """""""""""""""""//
+        }
+      }
+
+      &--get_started {
+        height: 13.06rem;
+        padding: $site-wide-padding-sm;
+
+        .get_started {
+          &--content {
+            justify-self: flex-start !important;
+            padding-top: 3.125rem;
+            position: relative;
+            z-index: 100;
+            .prominent-text {
+              font-size: 0.875rem;
+              line-height: 1.19rem;
+              margin-bottom: 0.3125rem;
+            }
+
+            .lighter-text {
+              font-size: 0.56rem;
+              line-height: 0.75rem;
+              margin-bottom: 1.8rem;
+            }
+
+            &-btn {
+              width: 10.9rem;
+              height: 2.93rem;
+              font-size: 0.75rem;
+              line-height: 1rem;
+              position: relative;
+              z-index: 100;
+            }
+          }
+          &--image {
+            background: url("/assets/water-like-sm.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 15.56rem;
+            right: 2rem;
+            bottom: 0rem;
+            overflow: hidden;
+            z-index: 3;
+
+            img {
+              width: 25rem;
+              height: 35.5rem;
+              position: relative;
+              top: -10rem;
+              left: -4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// &-extra {
+//     background-color: $logo-extra-color;
+//     display: inline-block;
+//     width: 10px;
+//     height: 10px;
+//     margin-left: 0.6rem;
+//     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+//   }
