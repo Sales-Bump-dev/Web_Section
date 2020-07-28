@@ -1,4 +1,11 @@
-# PROJECT ZEUS - FRONTEND 
+# PROJECT ZEUS - FRONTEND
+
+## Stack
+
+- React
+- Redux
+- SCSS
 
 ## npm start
-starts the application on port 
+
+starts the application on port 3000
