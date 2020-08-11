@@ -4,11 +4,11 @@ const app = express();
 const publicPath = path.join(__dirname, '..', 'build');
 const port = process.env.PORT || 3000;
 
-app.use(express.static(publicPath));
+const indexRouter = require('./routes/index');
+const marketRouter = require("./routes/market")
 
-app.get('*', (req, res) => {
-   res.sendFile(path.join(publicPath, 'index.html'));
-});
+app.use("api/v1/market", marketRouter)
+
 
 app.listen(port, () => {
    console.log('Server is up!');
